@@ -5,6 +5,8 @@
 </head>
 
 <body>
+    <h1>Calculadora</h1>
+    
     <form method="post" action="">
         Ingrese el primer numero:
         <input type="number" name="num" step="any" required>
