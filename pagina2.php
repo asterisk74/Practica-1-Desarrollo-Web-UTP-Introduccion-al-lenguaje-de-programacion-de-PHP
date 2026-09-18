@@ -1,3 +1,35 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .datos {
+            color: black;
+        }
+
+        .correcto {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Resultado</h1>
 
     <?php
     $nombre = strtolower($_POST['nombre']);
@@ -8,14 +40,14 @@
 
     if ($edad < 0) 
         {
-            echo "La edad no puede ser negativa.";
+            echo "<p class='error'>La edad no puede ser negativa.</p>";
         }
     elseif ($edad >= 18) 
         {
-            echo "Usted puede votar en las próximas elecciones de 2028.";
+            echo "<p class='correcto'>Usted puede votar en las próximas elecciones de 2028.</p>";
         }
     else 
         {
-            echo "Usted no es mayor de edad.";
+            echo "<p class='error'>Usted no es mayor de edad.</p>";
         }
     ?>
