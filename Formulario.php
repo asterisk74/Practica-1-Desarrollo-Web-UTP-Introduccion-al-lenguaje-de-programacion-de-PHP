@@ -2,6 +2,32 @@
 <html>
 <head>
     <title>Formulario de entrada del dato</title>
+        <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 350px;
+        }
+
+        input {
+            background-color: lightgray;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
 </head>
 
 <body>
